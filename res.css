@@ -1,0 +1,111 @@
+body {
+    padding: 0 ;
+    margin: 0;
+}
+
+header{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 15px 15px;
+    border: 30px outset;
+    border-radius: 5px;
+    border-color: #E85860;
+    border-top-color: Firebrick;
+}
+
+nav {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: darkred;
+    width: 100%;
+}
+
+.logo {
+    background: url(logo.jpg) no-repeat 50% 50%;
+    background-size: contain;
+    width: 190px;
+    height: 70px;
+    float: left;
+}
+
+.menu{
+    position: absolute;
+    right: 5px;
+}
+
+.menu a{
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    font-size: 20px;
+    color: whitesmoke;
+}
+h1 {
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    padding-top: 90px;
+    padding-left: 20px;
+ }
+
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        overflow: visible;
+    }
+
+    header{
+        font-size: 20px;
+    }
+
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    
+    .btn{
+        display: block;
+        cursor: pointer;
+    }
+
+    .show {
+        max-height: 200px;
+    }
+}
